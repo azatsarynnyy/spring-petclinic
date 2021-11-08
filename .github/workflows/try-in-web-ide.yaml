@@ -22,3 +22,4 @@ jobs:
         uses: redhat-actions/try-in-web-ide@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          web_ide_instance: https://codeready-openshift-workspaces.apps.cluster-de44.de44.sandbox985.opentlc.com
