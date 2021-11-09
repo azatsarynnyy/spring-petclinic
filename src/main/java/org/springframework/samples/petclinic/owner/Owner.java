@@ -41,6 +41,7 @@ import org.springframework.samples.petclinic.model.Person;
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @author Michael Isvy
+ * @author John
  */
 @Entity
 @Table(name = "owners")
