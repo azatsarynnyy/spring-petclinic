@@ -41,6 +41,7 @@ import org.springframework.samples.petclinic.model.Person;
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @author Michael Isvy
+ * @author Artem
  */
 @Entity
 @Table(name = "owners")
@@ -71,7 +72,7 @@ public class Owner extends Person {
 	}
 
 	public String getCity() {
-		return this.city;
+		return this.telephone;
 	}
 
 	public void setCity(String city) {
