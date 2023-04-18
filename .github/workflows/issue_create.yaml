@@ -8,6 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - run: gh issue create --repo eclipse/che --title "Che-Code automatic rebase against upstream VS Code is failed" --label "bug,invalid" --assignee azatsarynnyy --body "$(cat ./.github/template)"
+      - run: gh issue create --repo eclipse/che --title "Che-Code automatic rebase against upstream VS Code is failed" --label "kind/task,area/editor/vscode,severity/P1" --assignee azatsarynnyy --body "$(cat ./.github/template)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
