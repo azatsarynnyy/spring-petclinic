@@ -1,0 +1,11 @@
+name: issue create
+on:
+  workflow_dispatch:
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh issue create --repo azatsarynnyy/spring-petclinic --title Test --label "bug" --body "$(cat ./.github/template)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
