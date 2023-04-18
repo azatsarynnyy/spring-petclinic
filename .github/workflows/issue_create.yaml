@@ -6,6 +6,6 @@ jobs:
   create:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd && gh issue create --repo azatsarynnyy/spring-petclinic --title Test --label "bug" --body "$(cat ./.github/template)"
+      - run: pwd && ls -la && gh issue create --repo azatsarynnyy/spring-petclinic --title Test --label "bug" --body "$(cat ./.github/template)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
